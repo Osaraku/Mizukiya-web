@@ -39,10 +39,10 @@
 					    </div>
 					    <div class="col-md pr-4 d-flex topper align-items-center">
 					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-						    <span class="text">youremail@email.com</span>
+						    <span class="text">mizukiya@email.com</span>
 					    </div>
 					    <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right justify-content-end">
-						    <p class="mb-0 register-link"><span>Open hours:</span> <span>Monday - Sunday</span> <span>8:00AM - 9:00PM</span></p>
+						    <p class="mb-0 register-link"><span>Open hours:</span> <span>Senin - Minggu,</span> <span>08:00 - 21:00</span></p>
 					    </div>
 				    </div>
 			    </div>
@@ -51,18 +51,19 @@
     </div>
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Feliciano</a>
+	      <a class="navbar-brand" href="/">Feliciano</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	        	<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	        	<li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
-	        	<li class="nav-item"><a href="blog.html" class="nav-link">Stories</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-	          <li class="nav-item cta"><a href="reservation.html" class="nav-link">Book a table</a></li>
+	        	<li class="nav-item active"><a href="{{url('/')}}" class="nav-link @yield('beranda')">Beranda</a></li>
+	        	<li class="nav-item"><a href="{{url('menu')}}" class="nav-link @yield('menu')">Menu</a></li>
+	        	<li class="nav-item"><a href="{{url('reservasi')}}" class="nav-link yield('reservasi')">Reservasi</a></li>
+	        	<li class="nav-item"><a href="blog.html" class="nav-link">Promo</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Kontak</a></li>
+            <li class="nav-item cart"><a href="cart.html" class="nav-link"><span class="icon icon-shopping_cart"></span><span class="bag d-flex justify-content-center align-items-center"><small>1</small></span> Keranjang</a></li>
+	          <li class="nav-item cta"><a href="reservation.html" class="nav-link">Pesan Online</a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -93,13 +94,13 @@
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Open Hours</h2>
               <ul class="list-unstyled open-hours">
-                <li class="d-flex"><span>Monday</span><span>9:00 - 24:00</span></li>
-                <li class="d-flex"><span>Tuesday</span><span>9:00 - 24:00</span></li>
-                <li class="d-flex"><span>Wednesday</span><span>9:00 - 24:00</span></li>
-                <li class="d-flex"><span>Thursday</span><span>9:00 - 24:00</span></li>
-                <li class="d-flex"><span>Friday</span><span>9:00 - 02:00</span></li>
-                <li class="d-flex"><span>Saturday</span><span>9:00 - 02:00</span></li>
-                <li class="d-flex"><span>Sunday</span><span> 9:00 - 02:00</span></li>
+                <li class="d-flex"><span>Senin</span><span>8:00 - 21:00</span></li>
+                <li class="d-flex"><span>Selasa</span><span>8:00 - 21:00</span></li>
+                <li class="d-flex"><span>Rabu</span><span>8:00 - 21:00</span></li>
+                <li class="d-flex"><span>Kamis</span><span>8:00 - 21:00</span></li>
+                <li class="d-flex"><span>Jum'at</span><span>8:00 - 23:00</span></li>
+                <li class="d-flex"><span>Sabtu</span><span>8:00 - 23:00</span></li>
+                <li class="d-flex"><span>Minggu</span><span> 8:00 - 23:00</span></li>
               </ul>
             </div>
           </div>
