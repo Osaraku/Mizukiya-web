@@ -57,13 +57,13 @@
 	      </button>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	        	<li class="nav-item active"><a href="{{url('/')}}" class="nav-link @yield('beranda')">Beranda</a></li>
+	        	<li class="nav-item"><a href="{{url('/')}}" class="nav-link @yield('beranda')">Beranda</a></li>
 	        	<li class="nav-item"><a href="{{url('menu')}}" class="nav-link @yield('menu')">Menu</a></li>
-	        	<li class="nav-item"><a href="{{url('reservasi')}}" class="nav-link yield('reservasi')">Reservasi</a></li>
-	        	<li class="nav-item"><a href="blog.html" class="nav-link">Promo</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Kontak</a></li>
-            <li class="nav-item cart"><a href="cart.html" class="nav-link"><span class="icon icon-shopping_cart"></span><span class="bag d-flex justify-content-center align-items-center"><small>1</small></span> Keranjang</a></li>
-	          <li class="nav-item cta"><a href="reservation.html" class="nav-link">Pesan Online</a></li>
+	        	<li class="nav-item"><a href="{{url('reservasi')}}" class="nav-link @yield('reservasi')">Reservasi</a></li>
+	        	<li class="nav-item"><a href="{{url('promo')}}" class="nav-link @yield('promo')">Promo</a></li>
+	          <li class="nav-item"><a href="{{url('kontak')}}" class="nav-link @yield('kontak')">Kontak</a></li>
+            <li class="nav-item cart"><a href="{{url('keranjang')}}" class="nav-link @yield('keranjang')"><span class="icon icon-shopping_cart"></span><span class="bag d-flex justify-content-center align-items-center"><small>1</small></span> Keranjang</a></li>
+	          <li class="nav-item cta"><a href="reservation.html" class="nav-link">Login Admin</a></li>
 	        </ul>
 	      </div>
 	    </div>

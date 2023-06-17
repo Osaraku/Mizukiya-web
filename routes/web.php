@@ -24,3 +24,15 @@ Route::get('/menu', function () {
 Route::get('/reservasi', function () {
     return view('reservasi');
 });
+
+Route::get('/keranjang', function () {
+    return view('keranjang');
+});
+
+Route::get('/kontak', function () {
+    return view('kontak');
+});
+
+Route::get('/promo', function () {
+    return view('promo');
+});

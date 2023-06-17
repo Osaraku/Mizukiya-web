@@ -21,7 +21,7 @@
         </div>
       </div>
     </div>
-  </section>
+</section>
       
       <section class="ftco-section ftco-no-pt ftco-no-pb">
           <div class="container-fluid px-0">
