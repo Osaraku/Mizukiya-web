@@ -5,8 +5,8 @@
 @push('css')
     <style>
         /*--------------------------------------------------------------
-                # Menu Section
-                --------------------------------------------------------------*/
+                                                                                                                                            # Menu Section
+                                                                                                                                            --------------------------------------------------------------*/
 
         .menu-entry {
             margin-bottom: 30px;
@@ -44,8 +44,8 @@
                     data-scrollax-parent="true">
 
                     <div class="col-md-12 col-sm-12 text-center ftco-animate">
-                        <span class="subheading">Feliciano</span>
-                        <h1 class="mb-4">Best Restaurant</h1>
+                        <span class="subheading">Mizukiya</span>
+                        <h1 class="mb-4">Japanese Restaurant</h1>
                     </div>
 
                 </div>
@@ -59,7 +59,7 @@
                     data-scrollax-parent="true">
 
                     <div class="col-md-12 col-sm-12 text-center ftco-animate">
-                        <span class="subheading">Feliciano</span>
+                        <span class="subheading">Mizukiya</span>
                         <h1 class="mb-4">Nutritious &amp; Tasty</h1>
                     </div>
 
@@ -74,7 +74,7 @@
                     data-scrollax-parent="true">
 
                     <div class="col-md-12 col-sm-12 text-center ftco-animate">
-                        <span class="subheading">Feliciano</span>
+                        <span class="subheading">Mizukiya</span>
                         <h1 class="mb-4">Delicious Specialties</h1>
                     </div>
 
@@ -89,13 +89,11 @@
                 <div class="col-md-12">
                     <div class="featured">
                         <div class="row">
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <div class="featured-menus ftco-animate">
                                     <div class="menu-img img" style="background-image: url(images/breakfast-1.jpg);"></div>
                                     <div class="text text-center">
-                                        <h3>Grilled Beef with potatoes</h3>
-                                        <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span>
-                                        </p>
+                                        <h3>Sushi</h3>
                                     </div>
                                 </div>
                             </div>
@@ -103,19 +101,15 @@
                                 <div class="featured-menus ftco-animate">
                                     <div class="menu-img img" style="background-image: url(images/breakfast-2.jpg);"></div>
                                     <div class="text text-center">
-                                        <h3>Grilled Beef with potatoes</h3>
-                                        <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span>
-                                        </p>
+                                        <h3>Ramen</h3>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <div class="featured-menus ftco-animate">
                                     <div class="menu-img img" style="background-image: url(images/breakfast-3.jpg);"></div>
                                     <div class="text text-center">
-                                        <h3>Grilled Beef with potatoes</h3>
-                                        <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span>
-                                        </p>
+                                        <h3>Udon</h3>
                                     </div>
                                 </div>
                             </div>
@@ -123,9 +117,15 @@
                                 <div class="featured-menus ftco-animate">
                                     <div class="menu-img img" style="background-image: url(images/breakfast-4.jpg);"></div>
                                     <div class="text text-center">
-                                        <h3>Grilled Beef with potatoes</h3>
-                                        <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span>
-                                        </p>
+                                        <h3>Donburi</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="featured-menus ftco-animate">
+                                    <div class="menu-img img" style="background-image: url(images/breakfast-4.jpg);"></div>
+                                    <div class="text text-center">
+                                        <h3>Yakiniku</h3>
                                     </div>
                                 </div>
                             </div>
@@ -146,7 +146,7 @@
                 <div class="col-md-5 wrap-about pt-5 pt-md-5 pb-md-3 ftco-animate">
                     <div class="heading-section mb-4 my-5 my-md-0">
                         <span class="subheading">About</span>
-                        <h2 class="mb-4">Feliciano Restaurant</h2>
+                        <h2 class="mb-4">Mizukiya Restaurant</h2>
                     </div>
                     <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
                         paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
@@ -293,12 +293,12 @@
                 </div>
             </div>
         </div>
-        <br><br>
     </section>
 
     <section class="ftco-section testimony-section img">
         <div class="overlay"></div>
         <div class="container">
+            <br><br>
             <div class="row justify-content-center mb-5">
                 <div class="col-md-12 text-center heading-section ftco-animate">
                     <span class="subheading">Testimony</span>

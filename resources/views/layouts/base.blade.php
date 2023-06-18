@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Reggae+One&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -45,7 +45,7 @@
                             <span class="text">mizukiya@email.com</span>
                         </div>
                         <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right justify-content-end">
-                            <p class="mb-0 register-link"><span>Open hours:</span> <span>Senin - Minggu,</span>
+                            <p class="mb-0 register-link"><span>Jam Operasional:</span> <span>Senin - Minggu,</span>
                                 <span>08:00 - 21:00</span>
                             </p>
                         </div>
@@ -56,7 +56,7 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="/">Feliciano</a>
+            <a class="navbar-brand" href="/">Mizukiya</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
@@ -75,7 +75,7 @@
                                 class="icon icon-shopping_cart"></span><span
                                 class="bag d-flex justify-content-center align-items-center"><small>1</small></span>
                             Keranjang</a></li>
-                    <li class="nav-item cta"><a href="{{ url('admin/login') }}" class="nav-link">Login Admin</a></li>
+                    <li class="nav-item cta"><a href="{{ url('admin/login') }}" class="nav-link">Login</a></li>
                 </ul>
             </div>
         </div>
@@ -93,7 +93,7 @@
             <div class="row mb-5">
                 <div class="col-md-6 col-lg-3">
                     <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Feliciano</h2>
+                        <h2 class="ftco-heading-2">Mizukiya</h2>
                         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
                             there live the blind texts.</p>
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
@@ -105,7 +105,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Open Hours</h2>
+                        <h2 class="ftco-heading-2">Jam Operasional</h2>
                         <ul class="list-unstyled open-hours">
                             <li class="d-flex"><span>Senin</span><span>8:00 - 21:00</span></li>
                             <li class="d-flex"><span>Selasa</span><span>8:00 - 21:00</span></li>
@@ -119,7 +119,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Instagram</h2>
+                        <h2 class="ftco-heading-2">Galeri</h2>
                         <div class="thumb d-sm-flex">
                             <a href="#" class="thumb-menu img"
                                 style="background-image: url(images/insta-1.jpg);">
@@ -146,7 +146,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Newsletter</h2>
+                        <h2 class="ftco-heading-2">Buletin</h2>
                         <p>Far far away, behind the word mountains, far from the countries.</p>
                         <form action="#" class="subscribe-form">
                             <div class="form-group">

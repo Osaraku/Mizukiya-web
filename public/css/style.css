@@ -70,7 +70,11 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-image: url("/images/bg-web.png") !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
 }
 
 [tabindex="-1"]:focus {
@@ -5407,16 +5411,6 @@ input[type="button"].btn-block {
   position: relative;
 }
 
-.ftco-navbar-light .navbar-nav>.nav-item.cart>a .icon {
-  font-size: 16px;
-  color: #fff;
-}
-
-.ftco-navbar-dark .navbar-nav>.nav-item.cart>a .icon {
-  font-size: 20px;
-  color: rgba(0, 0, 0, 0.9);
-}
-
 .ftco-navbar-light .navbar-nav>.nav-item.cart>a .bag {
   position: absolute;
   top: 10px;
@@ -5424,7 +5418,6 @@ input[type="button"].btn-block {
   width: 24px;
   height: 24px;
   text-align: center;
-  background: #f8b500;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -5433,7 +5426,7 @@ input[type="button"].btn-block {
 
 .ftco-navbar-light .navbar-nav>.nav-item.cart>a .bag small {
   font-weight: 400;
-  color: #000;
+  color: transparent;
 }
 
 .ftco-cart .form-group {
@@ -12377,6 +12370,7 @@ h5,
 }
 
 .hero-wrap.hero-wrap-2 .slider-text .bread {
+  font-family: "Reggae One";
   font-weight: 900;
   color: #fff;
   font-size: 50px;
@@ -12504,7 +12498,7 @@ h5,
   font-size: 80px;
   color: #c8a97e;
   font-weight: normal;
-  font-family: "Great Vibes", cursive;
+  font-family: "Reggae One", cursive;
   margin-bottom: 0;
   line-height: 1;
 }
@@ -12802,7 +12796,7 @@ h5,
 }
 
 .featured .featured-menus .text h3 {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 500;
   margin-bottom: 0;
 }
@@ -12825,8 +12819,8 @@ h5,
 }
 
 .featured .featured-menus .menu-img {
-  width: 90px;
-  height: 90px;
+  width: 120px;
+  height: 120px;
   margin: 0 auto;
   margin-bottom: 10px;
   -webkit-border-radius: 50%;
@@ -13689,17 +13683,17 @@ textarea.form-control {
 
 .heading-section .subheading {
   position: absolute;
-  top: -50px;
+  top: -80px;
   left: 0;
   right: 0;
   font-weight: normal;
-  font-size: 100px;
+  font-size: 80px;
   display: block;
   margin-bottom: 0;
   color: rgba(0, 0, 0, 0.2);
   color: #c8a97e;
   line-height: 1;
-  font-family: "Great Vibes", cursive;
+  font-family: "Reggae One", cursive;
   margin-top: 0;
   z-index: -1;
 }
