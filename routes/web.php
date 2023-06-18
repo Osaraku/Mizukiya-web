@@ -29,10 +29,18 @@ Route::get('/keranjang', function () {
     return view('keranjang');
 });
 
+Route::get('/checkout', function () {
+    return view('checkout');
+});
+
 Route::get('/kontak', function () {
     return view('kontak');
 });
 
 Route::get('/promo', function () {
     return view('promo');
+});
+
+Route::get('/admin/login', function () {
+    return view('admin/login');
 });
