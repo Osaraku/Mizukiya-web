@@ -16,9 +16,9 @@
         <div class="container">
             <div class="row no-gutters slider-text align-items-end justify-content-center">
                 <div class="col-md-9 ftco-animate text-center mb-4">
-                    <h1 class="mb-2 bread">Blog</h1>
+                    <h1 class="mb-2 bread">Promo</h1>
                     <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
-                                    class="ion-ios-arrow-forward"></i></a></span> <span>Blog <i
+                                    class="ion-ios-arrow-forward"></i></a></span> <span>Promo <i
                                 class="ion-ios-arrow-forward"></i></span></p>
                 </div>
             </div>
@@ -28,108 +28,26 @@
     <section class="ftco-section bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 ftco-animate">
-                    <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
-                        </a>
-                        <div class="text pt-3 pb-4 px-4">
-                            <div class="meta">
-                                <div><a href="#">Sept. 06, 2019</a></div>
-                                <div><a href="#">Admin</a></div>
+                @foreach ($promos as $promo)
+                    <div class="col-md-4 ftco-animate">
+                        <div class="blog-entry">
+                            <a href="images/image_1.jpg" class="block-20"
+                                style="background-image: url('images/image_1.jpg');">
+                            </a>
+                            <div class="text pt-3 pb-2 px-2">
+                                <div class="meta">
+                                    <div>
+                                        <p>{{ $promo['awal_promo'] }} s/d {{ $promo['akhir_promo'] }}</p>
+                                    </div>
+                                </div>
+                                <h3 class="heading">{{ $promo['judul'] }}</h3>
+                                <p class="clearfix">
+                                    {{ $promo['deskripsi'] }}
+                                </p>
                             </div>
-                            <h3 class="heading"><a href="#">Taste the delicious foods in Asia</a></h3>
-                            <p class="clearfix">
-                                <a href="#" class="float-left read">Read more</a>
-                                <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
-                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 ftco-animate">
-                    <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-                        </a>
-                        <div class="text pt-3 pb-4 px-4">
-                            <div class="meta">
-                                <div><a href="#">Sept. 06, 2019</a></div>
-                                <div><a href="#">Admin</a></div>
-                            </div>
-                            <h3 class="heading"><a href="#">Taste the delicious foods in Asia</a></h3>
-                            <p class="clearfix">
-                                <a href="#" class="float-left read">Read more</a>
-                                <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 ftco-animate">
-                    <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-                        </a>
-                        <div class="text pt-3 pb-4 px-4">
-                            <div class="meta">
-                                <div><a href="#">Sept. 06, 2019</a></div>
-                                <div><a href="#">Admin</a></div>
-                            </div>
-                            <h3 class="heading"><a href="#">Taste the delicious foods in Asia</a></h3>
-                            <p class="clearfix">
-                                <a href="#" class="float-left read">Read more</a>
-                                <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 ftco-animate">
-                    <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_4.jpg');">
-                        </a>
-                        <div class="text pt-3 pb-4 px-4">
-                            <div class="meta">
-                                <div><a href="#">Sept. 06, 2019</a></div>
-                                <div><a href="#">Admin</a></div>
-                            </div>
-                            <h3 class="heading"><a href="#">Taste the delicious foods in Asia</a></h3>
-                            <p class="clearfix">
-                                <a href="#" class="float-left read">Read more</a>
-                                <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 ftco-animate">
-                    <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_5.jpg');">
-                        </a>
-                        <div class="text pt-3 pb-4 px-4">
-                            <div class="meta">
-                                <div><a href="#">Sept. 06, 2019</a></div>
-                                <div><a href="#">Admin</a></div>
-                            </div>
-                            <h3 class="heading"><a href="#">Taste the delicious foods in Asia</a></h3>
-                            <p class="clearfix">
-                                <a href="#" class="float-left read">Read more</a>
-                                <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 ftco-animate">
-                    <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_6.jpg');">
-                        </a>
-                        <div class="text pt-3 pb-4 px-4">
-                            <div class="meta">
-                                <div><a href="#">Sept. 06, 2019</a></div>
-                                <div><a href="#">Admin</a></div>
-                            </div>
-                            <h3 class="heading"><a href="#">Taste the delicious foods in Asia</a></h3>
-                            <p class="clearfix">
-                                <a href="#" class="float-left read">Read more</a>
-                                <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
             <div class="row no-gutters my-5">
                 <div class="col text-center">

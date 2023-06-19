@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PromoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,9 +38,7 @@ Route::get('/kontak', function () {
     return view('kontak');
 });
 
-Route::get('/promo', function () {
-    return view('promo');
-});
+Route::get('/promo', [PromoController::class, 'index']);
 
 Route::get('/admin/login', function () {
     return view('admin/login');
