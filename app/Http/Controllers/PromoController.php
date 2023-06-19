@@ -14,8 +14,7 @@ class PromoController extends Controller
     public function index()
     {
         return view('promo', [
-            "title" => "Promo",
-            "promos" => Promo::all()
+            "promos" => Promo::latest()->get()
         ]);
     }
 

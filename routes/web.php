@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PromoController;
+use App\Http\Controllers\MenuController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,9 +19,7 @@ Route::get('/', function () {
     return view('beranda');
 });
 
-Route::get('/menu', function () {
-    return view('menu');
-});
+Route::get('/menu', [MenuController::class, 'index']);
 
 Route::get('/reservasi', function () {
     return view('reservasi');
@@ -40,6 +39,6 @@ Route::get('/kontak', function () {
 
 Route::get('/promo', [PromoController::class, 'index']);
 
-Route::get('/admin/login', function () {
-    return view('admin/login');
+Route::get('/login', function () {
+    return view('auth/login');
 });

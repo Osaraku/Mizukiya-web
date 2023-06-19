@@ -5,8 +5,8 @@
 @push('css')
     <style>
         /*--------------------------------------------------------------
-                                                                                                                                            # Menu Section
-                                                                                                                                            --------------------------------------------------------------*/
+                                                                                                                                                    # Menu Section
+                                                                                                                                                    --------------------------------------------------------------*/
 
         .menu-entry {
             margin-bottom: 30px;
@@ -260,7 +260,7 @@
         <div class="container-wrap">
             <div class="row no-gutters">
                 <div class="col-md-3 ftco-animate">
-                    <a href="gallery.html" class="gallery img d-flex align-items-center"
+                    <a href="images/gallery-1.jpg" class="gallery img d-flex align-items-center"
                         style="background-image: url(images/gallery-1.jpg);">
                         <div class="icon mb-4 d-flex align-items-center justify-content-center">
                             <span class="icon-search"></span>
@@ -268,7 +268,7 @@
                     </a>
                 </div>
                 <div class="col-md-3 ftco-animate">
-                    <a href="gallery.html" class="gallery img d-flex align-items-center"
+                    <a href="images/gallery-2.jpg" class="gallery img d-flex align-items-center"
                         style="background-image: url(images/gallery-2.jpg);">
                         <div class="icon mb-4 d-flex align-items-center justify-content-center">
                             <span class="icon-search"></span>
@@ -276,7 +276,7 @@
                     </a>
                 </div>
                 <div class="col-md-3 ftco-animate">
-                    <a href="gallery.html" class="gallery img d-flex align-items-center"
+                    <a href="images/gallery-3.jpg" class="gallery img d-flex align-items-center"
                         style="background-image: url(images/gallery-3.jpg);">
                         <div class="icon mb-4 d-flex align-items-center justify-content-center">
                             <span class="icon-search"></span>
@@ -284,7 +284,7 @@
                     </a>
                 </div>
                 <div class="col-md-3 ftco-animate">
-                    <a href="gallery.html" class="gallery img d-flex align-items-center"
+                    <a href="images/gallery-4.jpg" class="gallery img d-flex align-items-center"
                         style="background-image: url(images/gallery-4.jpg);">
                         <div class="icon mb-4 d-flex align-items-center justify-content-center">
                             <span class="icon-search"></span>

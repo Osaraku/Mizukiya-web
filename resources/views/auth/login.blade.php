@@ -30,12 +30,11 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <style>
         body {
-
             font-family: 'Poppins', sans-serif;
         }
 
         .bg-light {
-            background-image: url(/images/bg_1.jpg) !important;
+            background-image: url("/images/bg-login.jpg") !important;
             background-size: cover;
             background-repeat: no-repeat;
             height: 100%;
@@ -60,22 +59,22 @@
 </head>
 
 <body>
-    <div class="login-page bg-dark">
+    <div class="login-page bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
-                    <h3 class="mb-3 ftco-heading-2 text-light">Login Admin</h3>
+                    <h3 class="mb-3 ftco-heading-2 text-light">LOGIN</h3>
                     <div class="bg-white shadow rounded">
                         <div class="row">
                             <div class="col-md-7 pe-0">
                                 <div class="form-left h-100 py-5 px-5">
                                     <form action="" class="row g-4">
                                         <div class="col-12">
-                                            <label>Username<span class="text-danger">*</span></label>
+                                            <label>Email<span class="text-danger">*</span></label>
                                             <div class="input-group">
                                                 <div class="input-group-text"><span class="icon-person"></span></i>
                                                 </div>
-                                                <input type="text" class="form-control" placeholder="Enter Username">
+                                                <input type="email" class="form-control" placeholder="Masukkan Email">
                                             </div>
                                         </div>
 
@@ -83,22 +82,15 @@
                                             <label>Password<span class="text-danger">*</span></label>
                                             <div class="input-group">
                                                 <div class="input-group-text"><span class="icon-lock2"></span></i></div>
-                                                <input type="text" class="form-control" placeholder="Enter Password">
+                                                <input type="text" class="form-control"
+                                                    placeholder="Masukkan Password">
                                             </div>
                                         </div>
 
                                         <div class="col-sm-6">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="inlineFormCheck">
-                                                <label class="form-check-label" for="inlineFormCheck">Remember
-                                                    me</label>
-                                            </div>
+                                            <p>Belum punya akun? <a href="#" class=" text-primary">Buat
+                                                    Akun</a></p>
                                         </div>
-
-                                        <div class="col-sm-6">
-                                            <a href="#" class="float-end text-primary">Forgot Password?</a>
-                                        </div>
-
                                         <div class="col-12">
                                             <button type="submit"
                                                 class="btn btn-primary px-4 float-end mt-4">login</button>

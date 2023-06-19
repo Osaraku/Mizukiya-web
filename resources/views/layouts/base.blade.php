@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <title>Mizukiya Resto</title>
+
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Reggae+One&display=swap" rel="stylesheet">
 
@@ -63,19 +65,20 @@
             </button>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="{{ url('/') }}" class="nav-link @yield('beranda')">Beranda</a>
+                    <li class="nav-item @yield('beranda')"><a href="{{ url('/') }}" class="nav-link">Beranda</a>
                     </li>
-                    <li class="nav-item"><a href="{{ url('menu') }}" class="nav-link @yield('menu')">Menu</a></li>
-                    <li class="nav-item"><a href="{{ url('reservasi') }}"
-                            class="nav-link @yield('reservasi')">Reservasi</a></li>
-                    <li class="nav-item"><a href="{{ url('promo') }}" class="nav-link @yield('promo')">Promo</a></li>
-                    <li class="nav-item"><a href="{{ url('kontak') }}" class="nav-link @yield('kontak')">Kontak</a>
+                    <li class="nav-item @yield('menu')"><a href="{{ url('menu') }}" class="nav-link">Menu</a></li>
+                    <li class="nav-item @yield('reservasi')"><a href="{{ url('reservasi') }}"
+                            class="nav-link ">Reservasi</a></li>
+                    <li class="nav-item @yield('promo')"><a href="{{ url('promo') }}" class="nav-link">Promo</a>
                     </li>
-                    <li class="nav-item cart"><a href="{{ url('keranjang') }}" class="nav-link @yield('keranjang')"><span
+                    <li class="nav-item @yield('kontak')"><a href="{{ url('kontak') }}" class="nav-link">Kontak</a>
+                    </li>
+                    <li class="nav-item  @yield('keranjang') cart"><a href="{{ url('keranjang') }}" class="nav-link"><span
                                 class="icon icon-shopping_cart"></span><span
                                 class="bag d-flex justify-content-center align-items-center"><small>1</small></span>
                             Keranjang</a></li>
-                    <li class="nav-item cta"><a href="{{ url('admin/login') }}" class="nav-link">Login</a></li>
+                    <li class="nav-item cta"><a href="{{ url('/login') }}" class="nav-link">Login</a></li>
                 </ul>
             </div>
         </div>

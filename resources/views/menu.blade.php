@@ -60,28 +60,33 @@
                             <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
                                 aria-labelledby="day-1-tab">
                                 <div class="row no-gutters d-flex align-items-stretch">
-                                    <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
-                                        <div class="menus d-sm-flex ftco-animate align-items-stretch">
-                                            <div class="menu-img img"
-                                                style="background-image: url(images/breakfast-1.jpg);"></div>
-                                            <div class="text d-flex align-items-center">
-                                                <div>
-                                                    <div class="d-flex">
-                                                        <div class="one-half">
-                                                            <h3>Grilled Beef with potatoes</h3>
-                                                        </div>
-                                                        <div class="one-forth">
-                                                            <span class="price">$29</span>
+                                    @foreach ($menus as $menu)
+                                        @if ($menu['id_kategori'] === 1)
+                                            <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+                                                <div class="menus d-sm-flex ftco-animate align-items-stretch bg-light">
+                                                    <div class="menu-img img"
+                                                        style="background-image: url(images/breakfast-1.jpg);"></div>
+                                                    <div class="text d-flex align-items-center">
+                                                        <div>
+                                                            <h3>{{ $menu['nama'] }}</h3>
+                                                            <p>{{ $menu['deskripsi'] }} mantap lorem
+                                                                ipsum dolor</p>
+                                                            <div class="d-flex mt-3">
+                                                                <div class="one-half">
+                                                                    <span class="price">Rp.{{ $menu['harga'] }}</span>
+                                                                </div>
+                                                                <div class="one-forth">
+                                                                    <p><a href="#"
+                                                                            class="btn btn-primary">+Keranjang</a>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>,
-                                                        <span>Tomatoe</span>
-                                                    </p>
-                                                    <p><a href="#" class="btn btn-primary">Order now</a></p>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
+                                        @endif
+                                    @endforeach
                                     <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
                                         <div class="menus d-sm-flex ftco-animate align-items-stretch">
                                             <div class="menu-img img"
@@ -104,52 +109,6 @@
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
-                                        <div class="menus d-sm-flex ftco-animate align-items-stretch">
-                                            <div class="menu-img img order-md-last"
-                                                style="background-image: url(images/breakfast-3.jpg);"></div>
-                                            <div class="text d-flex align-items-center">
-                                                <div>
-                                                    <div class="d-flex">
-                                                        <div class="one-half">
-                                                            <h3>Grilled Beef with potatoes</h3>
-                                                        </div>
-                                                        <div class="one-forth">
-                                                            <span class="price">$29</span>
-                                                        </div>
-                                                    </div>
-                                                    <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>,
-                                                        <span>Tomatoe</span>
-                                                    </p>
-                                                    <p><a href="#" class="btn btn-primary">Order now</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
-                                        <div class="menus d-sm-flex ftco-animate align-items-stretch">
-                                            <div class="menu-img img order-md-last"
-                                                style="background-image: url(images/breakfast-4.jpg);"></div>
-                                            <div class="text d-flex align-items-center">
-                                                <div>
-                                                    <div class="d-flex">
-                                                        <div class="one-half">
-                                                            <h3>Grilled Beef with potatoes</h3>
-                                                        </div>
-                                                        <div class="one-forth">
-                                                            <span class="price">$29</span>
-                                                        </div>
-                                                    </div>
-                                                    <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>,
-                                                        <span>Tomatoe</span>
-                                                    </p>
-                                                    <p><a href="#" class="btn btn-primary">Order now</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                     <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
                                         <div class="menus d-sm-flex ftco-animate align-items-stretch">
                                             <div class="menu-img img"
@@ -176,51 +135,6 @@
                                         <div class="menus d-sm-flex ftco-animate align-items-stretch">
                                             <div class="menu-img img"
                                                 style="background-image: url(images/breakfast-6.jpg);"></div>
-                                            <div class="text d-flex align-items-center">
-                                                <div>
-                                                    <div class="d-flex">
-                                                        <div class="one-half">
-                                                            <h3>Grilled Beef with potatoes</h3>
-                                                        </div>
-                                                        <div class="one-forth">
-                                                            <span class="price">$29</span>
-                                                        </div>
-                                                    </div>
-                                                    <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>,
-                                                        <span>Tomatoe</span>
-                                                    </p>
-                                                    <p><a href="#" class="btn btn-primary">Order now</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
-                                        <div class="menus d-sm-flex ftco-animate align-items-stretch">
-                                            <div class="menu-img img order-md-last"
-                                                style="background-image: url(images/breakfast-7.jpg);"></div>
-                                            <div class="text d-flex align-items-center">
-                                                <div>
-                                                    <div class="d-flex">
-                                                        <div class="one-half">
-                                                            <h3>Grilled Beef with potatoes</h3>
-                                                        </div>
-                                                        <div class="one-forth">
-                                                            <span class="price">$29</span>
-                                                        </div>
-                                                    </div>
-                                                    <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>,
-                                                        <span>Tomatoe</span>
-                                                    </p>
-                                                    <p><a href="#" class="btn btn-primary">Order now</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
-                                        <div class="menus d-sm-flex ftco-animate align-items-stretch">
-                                            <div class="menu-img img order-md-last"
-                                                style="background-image: url(images/breakfast-8.jpg);"></div>
                                             <div class="text d-flex align-items-center">
                                                 <div>
                                                     <div class="d-flex">

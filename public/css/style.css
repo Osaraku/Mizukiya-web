@@ -13130,20 +13130,20 @@ h5,
 }
 
 .menus .text .one-half {
-  width: calc(100% - 80px);
+  width: calc(100% - 40px);
 }
 
-.menus .text .one-half h3 {
+.menus .text h3 {
   font-size: 20px;
   font-weight: 600;
 }
 
 .menus .text .one-forth {
-  width: 80px;
+  width: 120px;
   text-align: right;
 }
 
-.menus .text .one-forth .price {
+.menus .text .price {
   font-size: 20px;
   color: #c8a97e;
   font-weight: 600;
