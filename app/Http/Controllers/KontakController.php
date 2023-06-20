@@ -2,19 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Menu;
+use App\Models\Kontak;
 use Illuminate\Http\Request;
 
-class MenuController extends Controller
+class KontakController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('menu', [
-            "menus" => Menu::all()
-        ]);
+        return view('kontak');
     }
 
     /**
@@ -30,13 +28,24 @@ class MenuController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate(
+            [
+                'name' => 'required|max:255',
+                'email' => 'required|email:dns',
+                'subjek' => 'required',
+                'pesan' => 'required'
+            ]
+        );
+
+        Kontak::create($validatedData);
+
+        return redirect("/kontak")->with('success', 'Pesan Terkirim!');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Menu $menu)
+    public function show(Kontak $kontak)
     {
         //
     }
@@ -44,7 +53,7 @@ class MenuController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Menu $menu)
+    public function edit(Kontak $kontak)
     {
         //
     }
@@ -52,7 +61,7 @@ class MenuController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Menu $menu)
+    public function update(Request $request, Kontak $kontak)
     {
         //
     }
@@ -60,7 +69,7 @@ class MenuController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Menu $menu)
+    public function destroy(Kontak $kontak)
     {
         //
     }

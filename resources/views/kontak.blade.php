@@ -31,18 +31,28 @@
             <div class="row d-flex align-items-stretch no-gutters">
                 <div class="col-md-6 pt-5 px-2 pb-2 p-md-5 order-md-last">
                     <h2 class="h4 mb-2 mb-md-5 font-weight-bold">Contact Us</h2>
-                    <form action="#">
+                    @if (session()->has('success'))
+                        <div class="alert alert-primary" role="alert">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+                    <form action="/kontak" method="POST">
+                        @csrf
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Your Name"
+                                required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Email">
+                            <input type="email" name="email" id="email" class="form-control"
+                                placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Subject">
+                            <input type="text" name="subjek" id="subjek" class="form-control" placeholder="Subject"
+                                required>
                         </div>
                         <div class="form-group">
-                            <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                            <textarea name="pesan" id="pesan" cols="30" rows="7" class="form-control" placeholder="Message"
+                                required></textarea>
                         </div>
                         <div class="form-group">
                             <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">

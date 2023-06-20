@@ -35,49 +35,73 @@
                             <span class="subheading">Book a table</span>
                             <h2 class="mb-4">Make Reservation</h2>
                         </div>
-                        <form action="#">
+                        @if (session()->has('success'))
+                            <div class="alert alert-primary" role="alert">
+                                {{ session('success') }}
+                            </div>
+                        @endif
+                        <form action="/reservasi" method="post">
+                            @csrf
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="">Name</label>
-                                        <input type="text" class="form-control" placeholder="Your Name">
+                                        <label for="name">Name</label>
+                                        <input type="text" class="form-control @error('name') is-invalid @enderror"
+                                            id="name" name="name" required placeholder="Your Name">
+                                    </div>
+                                    @error('name')
+                                        <div class="invalid-feedback">
+                                            {{ $message }}
+                                        </div>
+                                    @enderror
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control @error('email') is-invalid @enderror"
+                                            id="email" name="email" required placeholder="Your Email">
+                                    </div>
+                                    @error('name')
+                                        <div class="invalid-feedback">
+                                            {{ $message }}
+                                        </div>
+                                    @enderror
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="phone">Phone</label>
+                                        <input type="number" class="form-control" id="phone" name="phone" required
+                                            placeholder="Phone">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="">Email</label>
-                                        <input type="text" class="form-control" placeholder="Your Email">
+                                        <label for="tanggal">Date</label>
+                                        <input type="date" class="form-control" id="tanggal" name="tanggal" required
+                                            placeholder="Date">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="">Phone</label>
-                                        <input type="text" class="form-control" placeholder="Phone">
+                                        <label for="waktu">Time</label>
+                                        <input type="time" class="form-control" id="waktu" name="waktu" required
+                                            placeholder="Time">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="">Date</label>
-                                        <input type="text" class="form-control" id="book_date" placeholder="Date">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="">Time</label>
-                                        <input type="text" class="form-control" id="book_time" placeholder="Time">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="">Person</label>
+                                        <label for="jumlah_orang">Person</label>
                                         <div class="select-wrap one-third">
                                             <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                                            <select name="" id="" class="form-control">
-                                                <option value="">Person</option>
-                                                <option value="">1</option>
-                                                <option value="">2</option>
-                                                <option value="">3</option>
-                                                <option value="">4+</option>
+                                            <select name="jumlah_orang" id="jumlah_orang" class="form-control">
+                                                <option value="1">1 Orang</option>
+                                                <option value="2">2 Orang</option>
+                                                <option value="3">3 Orang</option>
+                                                <option value="4">4 Orang</option>
+                                                <option value="5">5 Orang</option>
+                                                <option value="6">6 Orang</option>
+                                                <option value="7">7 Orang</option>
+                                                <option value="8">8 Orang</option>
                                             </select>
                                         </div>
                                     </div>

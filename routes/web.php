@@ -2,6 +2,11 @@
 
 use App\Http\Controllers\PromoController;
 use App\Http\Controllers\MenuController;
+use App\Http\Controllers\ReservasiController;
+use App\Http\Controllers\KontakController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\StaffController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,24 +26,22 @@ Route::get('/', function () {
 
 Route::get('/menu', [MenuController::class, 'index']);
 
-Route::get('/reservasi', function () {
-    return view('reservasi');
-});
+Route::resource('/reservasi', ReservasiController::class);
+
+Route::resource('/kontak', KontakController::class);
 
 Route::get('/keranjang', function () {
     return view('keranjang');
 });
 
-Route::get('/checkout', function () {
-    return view('checkout');
-});
-
-Route::get('/kontak', function () {
-    return view('kontak');
-});
-
 Route::get('/promo', [PromoController::class, 'index']);
 
-Route::get('/login', function () {
-    return view('auth/login');
-});
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::post('/login', [LoginController::class, 'authenticate']);
+Route::post('/logout', [LoginController::class, 'logout']);
+
+Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
+Route::post('/register', [RegisterController::class, 'store']);
+
+Route::resource('/admin/dashboard', StaffController::class);
+Route::resource('/admin/reservasi', ReservasiController::class);

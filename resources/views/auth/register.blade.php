@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mizukiya | Login</title>
+    <title>Mizukiya | Register</title>
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -63,36 +63,37 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
-                    @if (session()->has('success'))
-                        <div class="alert alert-success alert-dismissible fade show" role="alert">
-                            {{ session('success') }}
-                            <button type="button" class="btn-close" data-bs-dismiss="alert"
-                                aria-label="Close"></button>
-                        </div>
-                    @endif
-                    @if (session()->has('loginError'))
-                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                            {{ session('loginError') }}
-                            <button type="button" class="btn-close" data-bs-dismiss="alert"
-                                aria-label="Close"></button>
-                        </div>
-                    @endif
-                    <h3 class="mb-3 ftco-heading-2 text-light">LOGIN</h3>
+                    <h3 class="mb-3 ftco-heading-2 text-light">BUAT AKUN</h3>
                     <div class="bg-white shadow rounded">
                         <div class="row">
                             <div class="col-md-7 pe-0">
                                 <div class="form-left h-100 py-5 px-5">
-                                    <form action="/login" method="POST" class="row g-4">
+                                    <form action="/register" method="POST" class="row g-4">
                                         @csrf
                                         <div class="col-12">
-                                            <label>Email<span class="text-danger">*</span></label>
+                                            <label for="name">Nama<span class="text-danger">*</span></label>
+                                            <div class="input-group">
+                                                <div class="input-group-text"><span class="icon-person"></span></i>
+                                                </div>
+                                                <input type="text" name="name" id="name"
+                                                    class="form-control @error('name') is-invalid @enderror"
+                                                    placeholder="Masukkan Nama" required value="{{ old('name') }}">
+                                                @error('name')
+                                                    <div class="invalid-feedback">
+                                                        {{ $message }}
+                                                    </div>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="email">Email<span class="text-danger">*</span></label>
                                             <div class="input-group">
                                                 <div class="input-group-text"><span class="icon-envelope"></span></i>
                                                 </div>
                                                 <input type="email" name="email" id="email"
                                                     class="form-control @error('email') is-invalid @enderror"
-                                                    placeholder="Masukkan Email" required autofocus
-                                                    value="{{ old('email') }}">
+                                                    placeholder="Masukkan Email" required value="{{ old('email') }}">
                                                 @error('email')
                                                     <div class="invalid-feedback">
                                                         {{ $message }}
@@ -102,21 +103,26 @@
                                         </div>
 
                                         <div class="col-12">
-                                            <label>Password<span class="text-danger">*</span></label>
+                                            <label for="password">Password<span class="text-danger">*</span></label>
                                             <div class="input-group">
                                                 <div class="input-group-text"><span class="icon-lock2"></span></i></div>
                                                 <input type="password" name="password" id="password"
-                                                    class="form-control" placeholder="Masukkan Password" required>
+                                                    class="form-control @error('password') is-invalid @enderror"
+                                                    placeholder="Masukkan Password" required>
+                                                @error('password')
+                                                    <div class="invalid-feedback">
+                                                        {{ $message }}
+                                                    </div>
+                                                @enderror
                                             </div>
                                         </div>
 
                                         <div class="col-sm-6">
-                                            <p>Belum punya akun? <a href="/register" class=" text-primary">Buat
-                                                    Akun</a></p>
+                                            <p>Sudah punya akun? <a href="/login" class=" text-primary">Login</a></p>
                                         </div>
                                         <div class="col-12">
                                             <button type="submit"
-                                                class="btn btn-primary px-4 float-end mt-4">login</button>
+                                                class="btn btn-primary px-4 float-end mt-4">Daftar</button>
                                         </div>
                                     </form>
                                 </div>
