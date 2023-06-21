@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
     @stack('css')
+    @livewireStyles
 </head>
 
 <body>
@@ -97,6 +98,8 @@
     @yield('content')
 
     {{-- end konten utama --}}
+    
+    @livewireScripts
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
         <div class="container">

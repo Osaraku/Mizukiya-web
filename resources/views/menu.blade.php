@@ -75,11 +75,7 @@
                                                                 <div class="one-half">
                                                                     <span class="price">Rp.{{ $menu['harga'] }}</span>
                                                                 </div>
-                                                                <div class="one-forth">
-                                                                    <p><a href="#"
-                                                                            class="btn btn-primary">+Keranjang</a>
-                                                                    </p>
-                                                                </div>
+                                                                @livewire('add-to-cart-button-component',['menu' => $menu])
                                                             </div>
                                                         </div>
                                                     </div>
@@ -107,11 +103,7 @@
                                                                 <div class="one-half">
                                                                     <span class="price">Rp.{{ $menu['harga'] }}</span>
                                                                 </div>
-                                                                <div class="one-forth">
-                                                                    <p><a href="#"
-                                                                            class="btn btn-primary">+Keranjang</a>
-                                                                    </p>
-                                                                </div>
+                                                                
                                                             </div>
                                                         </div>
                                                     </div>
