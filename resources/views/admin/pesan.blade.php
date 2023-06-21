@@ -31,25 +31,21 @@
             <table class="table table-striped bg-light">
                 <thead class="thead-light">
                     <tr>
-                        <th scope="col">No</th>
+                        <th scope="col">Waktu</th>
                         <th scope="col">Nama</th>
                         <th scope="col">Email</th>
-                        <th scope="col">No. Telp</th>
-                        <th scope="col">Tanggal</th>
-                        <th scope="col">Waktu</th>
-                        <th scope="col">Jumlah Orang</th>
+                        <th scope="col">Subjek</th>
+                        <th scope="col">Pesan</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($pesans as $pesan)
+                    @foreach ($kontaks as $pesan)
                         <tr>
-                            <td>1</td>
+                            <td>{{ $pesan['created_at'] }}</td>
                             <td>{{ $pesan['name'] }}</td>
                             <td>{{ $pesan['email'] }}</td>
-                            <td>{{ $pesan['phone'] }}</td>
-                            <td>{{ $pesan['tanggal'] }}</td>
-                            <td>{{ $pesan['waktu'] }}</td>
-                            <td>{{ $pesan['jumlah_orang'] }}</td>
+                            <td>{{ $pesan['subjek'] }}</td>
+                            <td>{{ $pesan['pesan'] }}</td>
                         </tr>
                     @endforeach
                 </tbody>

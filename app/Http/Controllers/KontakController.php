@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Kontak;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class KontakController extends Controller
 {
@@ -12,7 +13,13 @@ class KontakController extends Controller
      */
     public function index()
     {
-        return view('kontak');
+        if (auth()->check() && Auth::user()->is_admin == 1) {
+            return view('admin.pesan', [
+                "kontaks" => Kontak::latest()->get()
+            ]);
+        } else {
+            return view('kontak');
+        }
     }
 
     /**

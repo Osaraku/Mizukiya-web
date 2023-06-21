@@ -70,8 +70,7 @@
                                                     <div class="text d-flex align-items-center">
                                                         <div>
                                                             <h3>{{ $menu['nama'] }}</h3>
-                                                            <p>{{ $menu['deskripsi'] }} mantap lorem
-                                                                ipsum dolor</p>
+                                                            <p>{{ $menu['deskripsi'] }}</p>
                                                             <div class="d-flex mt-3">
                                                                 <div class="one-half">
                                                                     <span class="price">Rp.{{ $menu['harga'] }}</span>
@@ -103,8 +102,7 @@
                                                     <div class="text d-flex align-items-center">
                                                         <div>
                                                             <h3>{{ $menu['nama'] }}</h3>
-                                                            <p>{{ $menu['deskripsi'] }} mantap lorem
-                                                                ipsum dolor</p>
+                                                            <p>{{ $menu['deskripsi'] }}</p>
                                                             <div class="d-flex mt-3">
                                                                 <div class="one-half">
                                                                     <span class="price">Rp.{{ $menu['harga'] }}</span>
@@ -137,8 +135,7 @@
                                                     <div class="text d-flex align-items-center">
                                                         <div>
                                                             <h3>{{ $menu['nama'] }}</h3>
-                                                            <p>{{ $menu['deskripsi'] }} mantap lorem
-                                                                ipsum dolor</p>
+                                                            <p>{{ $menu['deskripsi'] }}</p>
                                                             <div class="d-flex mt-3">
                                                                 <div class="one-half">
                                                                     <span class="price">Rp.{{ $menu['harga'] }}</span>
@@ -171,8 +168,7 @@
                                                     <div class="text d-flex align-items-center">
                                                         <div>
                                                             <h3>{{ $menu['nama'] }}</h3>
-                                                            <p>{{ $menu['deskripsi'] }} mantap lorem
-                                                                ipsum dolor</p>
+                                                            <p>{{ $menu['deskripsi'] }}</p>
                                                             <div class="d-flex mt-3">
                                                                 <div class="one-half">
                                                                     <span class="price">Rp.{{ $menu['harga'] }}</span>
@@ -205,8 +201,7 @@
                                                     <div class="text d-flex align-items-center">
                                                         <div>
                                                             <h3>{{ $menu['nama'] }}</h3>
-                                                            <p>{{ $menu['deskripsi'] }} mantap lorem
-                                                                ipsum dolor</p>
+                                                            <p>{{ $menu['deskripsi'] }}</p>
                                                             <div class="d-flex mt-3">
                                                                 <div class="one-half">
                                                                     <span class="price">Rp.{{ $menu['harga'] }}</span>
@@ -239,8 +234,7 @@
                                                     <div class="text d-flex align-items-center">
                                                         <div>
                                                             <h3>{{ $menu['nama'] }}</h3>
-                                                            <p>{{ $menu['deskripsi'] }} mantap lorem
-                                                                ipsum dolor</p>
+                                                            <p>{{ $menu['deskripsi'] }} </p>
                                                             <div class="d-flex mt-3">
                                                                 <div class="one-half">
                                                                     <span class="price">Rp.{{ $menu['harga'] }}</span>

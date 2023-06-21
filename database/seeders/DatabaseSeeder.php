@@ -8,6 +8,7 @@ use App\Models\Category;
 use App\Models\User;
 use App\Models\Menu;
 use App\Models\Promo;
+use App\Models\Posisi;
 
 class DatabaseSeeder extends Seeder
 {
@@ -78,6 +79,42 @@ class DatabaseSeeder extends Seeder
                 'deskripsi' => 'BUY 1 GET 1 FREE - Pembelian Kawaii Package Dapatkan Chicken Katsu Curry Rice.',
                 'awal_promo' => '2023-05-02',
                 'akhir_promo' => '2023-05-19',
+            ]
+        );
+
+        Posisi::create(
+            [
+                'posisi' => 'Manager'
+            ]
+        );
+
+        Posisi::create(
+            [
+                'posisi' => 'Chef'
+            ]
+        );
+
+        Posisi::create(
+            [
+                'posisi' => 'Pelayan'
+            ]
+        );
+
+        Posisi::create(
+            [
+                'posisi' => 'Kasir'
+            ]
+        );
+
+        Posisi::create(
+            [
+                'posisi' => 'Resepsionis'
+            ]
+        );
+
+        Posisi::create(
+            [
+                'posisi' => 'Pencuci Piring'
             ]
         );
     }
