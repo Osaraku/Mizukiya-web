@@ -42,22 +42,22 @@
                         <div class="nav nav-pills d-flex text-center" id="v-pills-tab" role="tablist"
                             aria-orientation="vertical">
                             <a class="nav-link ftco-animate active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1"
-                                role="tab" aria-controls="v-pills-1" aria-selected="true">Breakfast</a>
+                                role="tab" aria-controls="v-pills-1" aria-selected="true">Sushi</a>
 
                             <a class="nav-link ftco-animate" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2"
-                                role="tab" aria-controls="v-pills-2" aria-selected="false">Lunch</a>
+                                role="tab" aria-controls="v-pills-2" aria-selected="false">Ramen</a>
 
                             <a class="nav-link ftco-animate" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3"
-                                role="tab" aria-controls="v-pills-3" aria-selected="false">Dinner</a>
+                                role="tab" aria-controls="v-pills-3" aria-selected="false">Udon</a>
 
                             <a class="nav-link ftco-animate" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4"
-                                role="tab" aria-controls="v-pills-4" aria-selected="false">Drinks</a>
+                                role="tab" aria-controls="v-pills-4" aria-selected="false">Yakiniku</a>
 
                             <a class="nav-link ftco-animate" id="v-pills-5-tab" data-toggle="pill" href="#v-pills-5"
-                                role="tab" aria-controls="v-pills-5" aria-selected="false">Desserts</a>
+                                role="tab" aria-controls="v-pills-5" aria-selected="false">Donburi</a>
 
                             <a class="nav-link ftco-animate" id="v-pills-6-tab" data-toggle="pill" href="#v-pills-6"
-                                role="tab" aria-controls="v-pills-6" aria-selected="false">Wine</a>
+                                role="tab" aria-controls="v-pills-6" aria-selected="false">Drinks</a>
 
                         </div>
                     </div>

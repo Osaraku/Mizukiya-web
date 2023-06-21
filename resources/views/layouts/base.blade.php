@@ -104,8 +104,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="ftco-footer-widget mb-4">
                         <h2 class="ftco-heading-2">Mizukiya</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                            there live the blind texts.</p>
+                        <p>Restoran nuansa jepang dengan mengutamakan kualitas dan kepuasan pelanggan.</p>
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
                             <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                             <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -157,7 +156,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="ftco-footer-widget mb-4">
                         <h2 class="ftco-heading-2">Buletin</h2>
-                        <p>Far far away, behind the word mountains, far from the countries.</p>
+                        <p>Dari Pelanggan untuk Pelanggan</p>
                         <form action="#" class="subscribe-form">
                             <div class="form-group">
                                 <input type="text" class="form-control mb-2 text-center"
