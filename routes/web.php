@@ -24,7 +24,7 @@ Route::get('/', function () {
     return view('beranda');
 });
 
-Route::get('/menu', [MenuController::class, 'index']);
+Route::resource('/menu', MenuController::class);
 
 Route::resource('/reservasi', ReservasiController::class);
 
@@ -45,3 +45,4 @@ Route::post('/register', [RegisterController::class, 'store']);
 
 Route::resource('/admin/dashboard', StaffController::class);
 Route::resource('/admin/reservasi', ReservasiController::class);
+Route::resource('/admin/menu', MenuController::class);
