@@ -91,7 +91,7 @@
                         <div class="row">
                             <div class="col-md-2">
                                 <div class="featured-menus ftco-animate">
-                                    <div class="menu-img img" style="background-image: url(images/breakfast-1.jpg);"></div>
+                                    <div class="menu-img img" style="background-image: url(images/Makizushi.jpg);"></div>
                                     <div class="text text-center">
                                         <h3>Sushi</h3>
                                     </div>
@@ -99,7 +99,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="featured-menus ftco-animate">
-                                    <div class="menu-img img" style="background-image: url(images/breakfast-2.jpg);"></div>
+                                    <div class="menu-img img" style="background-image: url(images/Mushroom_Ramen.jpg);"></div>
                                     <div class="text text-center">
                                         <h3>Ramen</h3>
                                     </div>
@@ -107,7 +107,7 @@
                             </div>
                             <div class="col-md-2">
                                 <div class="featured-menus ftco-animate">
-                                    <div class="menu-img img" style="background-image: url(images/breakfast-3.jpg);"></div>
+                                    <div class="menu-img img" style="background-image: url(images/Udon_Soup.jpg);"></div>
                                     <div class="text text-center">
                                         <h3>Udon</h3>
                                     </div>
@@ -115,7 +115,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="featured-menus ftco-animate">
-                                    <div class="menu-img img" style="background-image: url(images/breakfast-4.jpg);"></div>
+                                    <div class="menu-img img" style="background-image: url(images/blackpaper_tori_don.jpeg);"></div>
                                     <div class="text text-center">
                                         <h3>Donburi</h3>
                                     </div>
@@ -123,7 +123,7 @@
                             </div>
                             <div class="col-md-2">
                                 <div class="featured-menus ftco-animate">
-                                    <div class="menu-img img" style="background-image: url(images/breakfast-4.jpg);"></div>
+                                    <div class="menu-img img" style="background-image: url(images/Yakiniku_Grill_set.jpg);"></div>
                                     <div class="text text-center">
                                         <h3>Yakiniku</h3>
                                     </div>
@@ -164,8 +164,8 @@
         <div class="container">
             <div class="row justify-content-center mb-5 pb-2">
                 <div class="col-md-12 text-center heading-section ftco-animate">
-                    <span class="subheading">Layanan</span>
-                    <h2 class="mb-4">Pelayanan Catering</h2>
+                    <span class="subheading">Keunggulan</span>
+                    <h2 class="mb-4">Mizukiya Restaurant</h2>
                 </div>
             </div>
             <div class="row">
@@ -175,7 +175,7 @@
                             <span class="flaticon-cake"></span>
                         </div>
                         <div class="media-body p-2 mt-3">
-                            <h3 class="heading">Ulang Tahun</h3>
+                            <h3 class="heading">Pesta Ulang Tahun</h3>
                             <p>Restoran kami menyajikan paket katering bagi kamu yang sedang merayakan ulang tahun</p>
                         </div>
                     </div>
@@ -216,29 +216,29 @@
                         <p class="mb-4">Menu Kami memiliki tingkat kualitas yang tinggi dan tampilan yang menarik
                             untuk dilihat dan kami selalu mengutamakan kepuasan pelanggan kami
                         </p>
-                        <p><a href="#" class="btn btn-primary btn-outline-primary px-4 py-3">Lihat Semua Menu Disini</a></p>
+                        <p><a href="/menu" class="btn btn-primary btn-outline-primary px-4 py-3">Lihat Semua Menu Disini</a></p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="menu-entry">
-                                <a href="#" class="img" style="background-image: url(images/menu-1.jpg);"></a>
+                                <a href="#" class="img" style="background-image: url(images/beef_curry_udon.jpeg);"></a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="menu-entry mt-lg-4">
-                                <a href="#" class="img" style="background-image: url(images/menu-2.jpg);"></a>
+                                <a href="#" class="img" style="background-image: url(images/Fried_Sushi.jpg);"></a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="menu-entry">
-                                <a href="#" class="img" style="background-image: url(images/menu-3.jpg);"></a>
+                                <a href="#" class="img" style="background-image: url(images/Yakitori_grill.jpg);"></a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="menu-entry mt-lg-4">
-                                <a href="#" class="img" style="background-image: url(images/menu-3.jpg);"></a>
+                                <a href="#" class="img" style="background-image: url(images/Rib_Ramen_Soup.jpg);"></a>
                             </div>
                         </div>
                     </div>
@@ -370,7 +370,7 @@
                         </div>
                         <div class="item">
                             <div class="testimony-wrap text-center pb-5">
-                                <div class="user-img mb-4" style="background-image: url(images/person_3.jpg)">
+                                <div class="user-img mb-4" style="background-image: url(images/Wildan.jpg)">
                                     <span class="quote d-flex align-items-center justify-content-center">
                                         <i class="icon-quote-left"></i>
                                     </span>
@@ -379,7 +379,7 @@
                                     <p class="mb-4">saya sangat menyukai restoran ini sampai saya 
                                         hanya ingin menghabiskan waktu saya disini.
                                     </p>
-                                    <p class="name">Ian Boner</p>
+                                    <p class="name">Wildan R.</p>
                                     <span class="position">Pelanggan</span>
                                 </div>
                             </div>
