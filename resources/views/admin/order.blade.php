@@ -34,18 +34,18 @@
                         <th scope="col">Waktu</th>
                         <th scope="col">Nama</th>
                         <th scope="col">Email</th>
-                        <th scope="col">Subjek</th>
+                        {{-- <th scope="col">Subjek</th> --}}
                         <th scope="col">Pesan</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($kontaks as $pesan)
+                    @foreach ($orders as $order)
                         <tr>
-                            <td>{{ $pesan['created_at'] }}</td>
-                            <td>{{ $pesan['name'] }}</td>
-                            <td>{{ $pesan['email'] }}</td>
-                            <td>{{ $pesan['subjek'] }}</td>
-                            <td>{{ $pesan['pesan'] }}</td>
+                            <td>{{ $order['created_at'] }}</td>
+                            <td>{{ $order['nama'] }}</td>
+                            <td>{{ $order['email'] }}</td>
+                            {{-- <td>{{ $order['subjek'] }}</td> --}}
+                            <td>{{ $order['pesan'] }}</td>
                         </tr>
                     @endforeach
                 </tbody>

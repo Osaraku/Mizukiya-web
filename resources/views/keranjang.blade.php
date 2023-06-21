@@ -78,94 +78,97 @@
 
     <section class="ftco-section">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-8 ftco-animate">
-                    <form action="" method="POST" class="billing-form ftco-bg-dark p-3 p-md-5">
-                        <h3 class="mb-4 billing-heading">Billing Details</h3>
-                        <div class="row align-items-end">
-                            <div class="w-100"></div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="nama">Nama</label>
-                                    <input type="text" id="nama" name="nama" class="form-control"
-                                        placeholder="Nama">
+                <form action="/keranjang" method="POST">
+                @csrf
+                <div class="billing-form ftco-bg-dark p-3 p-md-5">
+                    <div class="row">
+                        <div class="col-xl-8 ftco-animate">
+                            <h3 class="mb-4 billing-heading">Billing Details</h3>
+                            <div class="row align-items-end">
+                                <div class="w-100"></div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="nama">Nama</label>
+                                        <input type="text" id="nama" name="nama" class="form-control"
+                                            placeholder="Nama">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="w-100"></div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" id="email" name="email" class="form-control"
-                                        placeholder="Email">
+                                <div class="w-100"></div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" class="form-control"
+                                            placeholder="Email">
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="w-100"></div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="phone">Phone</label>
-                                    <input type="number" id="number" name="number" class="form-control"
-                                        placeholder="Nomor Telp">
+    
+                                <div class="w-100"></div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="phone">Phone</label>
+                                        <input type="number" id="phone" name="phone" class="form-control"
+                                            placeholder="Nomor Telp">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </form><!-- END -->
-                </div> <!-- .col-md-8 -->
-
-                <div class="col-xl-4 sidebar ftco-animate">
-                    <div class="sidebar-box ftco-animate">
-                        <div class="cart-detail cart-total ftco-bg-dark p-3 p-md-4">
-                            <h3 class="billing-heading mb-4">Cart Total</h3>
-                            <p class="d-flex">
-                                <span>Subtotal</span>
-                                <span>Rp. {{ $cart->total }}</span>
-                            </p>
-                            <p class="d-flex">
-                                <span>Delivery</span>
-                                <span>Rp. 10000</span>
-                            </p>
-                            <p class="d-flex">
-                                <span>Discount</span>
-                                <span>Rp. 0</span>
-                            </p>
-                            <hr>
-                            <p class="d-flex total-price">
-                                <span>Total</span>
-                                <span>Rp. {{ $cart->total + 10000 }}</span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="sidebar-box ftco-animate">
-                        <div class="cart-detail ftco-bg-dark p-3 p-md-4">
-                            <h3 class="billing-heading mb-4">Payment Method</h3>
-                            <div class="form-group">
-                                <div class="col-md-12">
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio" class="mr-2"> Transfer
-                                            Bank</label>
-                                    </div>
+    
+                        <div class="col-xl-4 sidebar ftco-animate">
+                            <div class="sidebar-box ftco-animate">
+                                <div class="cart-detail cart-total ftco-bg-dark p-3 p-md-4">
+                                    <h3 class="billing-heading mb-4">Cart Total</h3>
+                                    <p class="d-flex">
+                                        <span>Subtotal</span>
+                                        <span>Rp. {{ $cart->total }}</span>
+                                    </p>
+                                    <p class="d-flex">
+                                        <span>Delivery</span>
+                                        <span>Rp. 10000</span>
+                                    </p>
+                                    <p class="d-flex">
+                                        <span>Discount</span>
+                                        <span>Rp. 0</span>
+                                    </p>
+                                    <hr>
+                                    <p class="d-flex total-price">
+                                        <span>Total</span>
+                                        <span>Rp. {{ $cart->total + 10000 }}</span>
+                                    </p>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <div class="col-md-12">
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio" class="mr-2"> COD</label>
+    
+                            <div class="sidebar-box ftco-animate">
+                                <div class="cart-detail ftco-bg-dark p-3 p-md-4">
+                                    <h3 class="billing-heading mb-4">Payment Method</h3>
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <div class="radio">
+                                                <label><input type="radio" name="transfer_bank" class="mr-2"> Transfer
+                                                    Bank</label>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-md-12">
-                                    <div class="radio">
-                                        <label><input type="radio" name="optradio" class="mr-2"> Retail</label>
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <div class="radio">
+                                                <label><input type="radio" name="cod" class="mr-2"> COD</label>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <div class="radio">
+                                                <label><input type="radio" name="retail" class="mr-2"> Retail</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>
+                                    <input type="submit" value="Place an order" class="btn btn-primary py-3 px-4"> </p>
                             </div>
-                            <p><a href="#"class="btn btn-primary py-3 px-4">Place an order</a></p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </section> <!-- .section -->
 
