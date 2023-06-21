@@ -29,7 +29,7 @@ class StaffController extends Controller
      */
     public function create()
     {
-        return view('admin.staff_create', [
+        return view('admin.dashboard_create', [
             'posisis' => Posisi::All()
         ]);
     }
@@ -68,9 +68,10 @@ class StaffController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Staff $staff)
+    public function edit(string $staff)
     {
-        return view('admin.staff_update', [
+        $staff = Staff::find($staff);
+        return view('admin.dashboard_update', [
             'staff' => $staff,
             'posisis' => Posisi::All()
         ]);
@@ -108,8 +109,9 @@ class StaffController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Staff $staff)
+    public function destroy(string $staff)
     {
+        $staff = Staff::find($staff);
         if ($staff->image) {
             Storage::delete($staff->image);
         }
