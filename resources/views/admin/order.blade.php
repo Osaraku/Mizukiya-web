@@ -1,5 +1,5 @@
 @extends('layouts.base-admin')
-@section('admin-pesan', 'active')
+@section('admin-order', 'active')
 
 {{-- ini buat tambahan css kalau misal ada css khusus untuk 1 halaman aja gk mau berpengaruh ke halaman lain --}}
 @push('css')
@@ -17,7 +17,7 @@
         <div class="container">
             <div class="row no-gutters slider-text align-items-end justify-content-center">
                 <div class="col-md-9 ftco-animate text-center mb-4">
-                    <h1 class="mb-2 bread">Pesan</h1>
+                    <h1 class="mb-2 bread">Order</h1>
                     <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
                                     class="ion-ios-arrow-forward"></i></a></span> <span>Reservation <i
                                 class="ion-ios-arrow-forward"></i></span></p>
@@ -31,16 +31,15 @@
             <table class="table table-striped bg-light">
                 <thead class="thead-light">
                     <tr>
+                        <th scope="col">Waktu</th>
                         <th scope="col">Nama</th>
                         <th scope="col">Email</th>
-                        <th scope="col">No. Telp</th>
-                        <th scope="col">Menu</th>
-                        <th scope="col">Total</th>
-                        <th scope="col">Pembayaran</th>
+                        <th scope="col">Subjek</th>
+                        <th scope="col">Pesan</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($orders as $order)
+                    @foreach ($kontaks as $pesan)
                         <tr>
                             <td>{{ $pesan['created_at'] }}</td>
                             <td>{{ $pesan['name'] }}</td>

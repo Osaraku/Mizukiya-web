@@ -75,7 +75,7 @@
                                                                 <div class="one-half">
                                                                     <span class="price">Rp.{{ $menu['harga'] }}</span>
                                                                 </div>
-                                                                @livewire('add-to-cart-button-component',['menu' => $menu])
+                                                                @livewire('add-to-cart-button-component', ['menu' => $menu])
                                                             </div>
                                                         </div>
                                                     </div>
@@ -103,7 +103,7 @@
                                                                 <div class="one-half">
                                                                     <span class="price">Rp.{{ $menu['harga'] }}</span>
                                                                 </div>
-                                                                
+                                                                @livewire('add-to-cart-button-component', ['menu' => $menu])
                                                             </div>
                                                         </div>
                                                     </div>
@@ -114,8 +114,7 @@
                                 </div>
                             </div>
 
-                            <div class="tab-pane fade" id="v-pills-3" role="tabpanel"
-                                aria-labelledby="v-pills-day-3-tab">
+                            <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-day-3-tab">
                                 <div class="row no-gutters d-flex align-items-stretch">
                                     @foreach ($menus as $menu)
                                         @if ($menu['id_kategori'] === 3)
@@ -132,11 +131,7 @@
                                                                 <div class="one-half">
                                                                     <span class="price">Rp.{{ $menu['harga'] }}</span>
                                                                 </div>
-                                                                <div class="one-forth">
-                                                                    <p><a href="#"
-                                                                            class="btn btn-primary">+Keranjang</a>
-                                                                    </p>
-                                                                </div>
+                                                                @livewire('add-to-cart-button-component', ['menu' => $menu])
                                                             </div>
                                                         </div>
                                                     </div>
@@ -165,11 +160,7 @@
                                                                 <div class="one-half">
                                                                     <span class="price">Rp.{{ $menu['harga'] }}</span>
                                                                 </div>
-                                                                <div class="one-forth">
-                                                                    <p><a href="#"
-                                                                            class="btn btn-primary">+Keranjang</a>
-                                                                    </p>
-                                                                </div>
+                                                                @livewire('add-to-cart-button-component', ['menu' => $menu])
                                                             </div>
                                                         </div>
                                                     </div>
@@ -198,11 +189,7 @@
                                                                 <div class="one-half">
                                                                     <span class="price">Rp.{{ $menu['harga'] }}</span>
                                                                 </div>
-                                                                <div class="one-forth">
-                                                                    <p><a href="#"
-                                                                            class="btn btn-primary">+Keranjang</a>
-                                                                    </p>
-                                                                </div>
+                                                                @livewire('add-to-cart-button-component', ['menu' => $menu])
                                                             </div>
                                                         </div>
                                                     </div>
@@ -231,11 +218,7 @@
                                                                 <div class="one-half">
                                                                     <span class="price">Rp.{{ $menu['harga'] }}</span>
                                                                 </div>
-                                                                <div class="one-forth">
-                                                                    <p><a href="#"
-                                                                            class="btn btn-primary">+Keranjang</a>
-                                                                    </p>
-                                                                </div>
+                                                                @livewire('add-to-cart-button-component', ['menu' => $menu])
                                                             </div>
                                                         </div>
                                                     </div>

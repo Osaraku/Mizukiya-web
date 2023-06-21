@@ -2,30 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Cart;
-use App\Models\CartItem;
+use App\Models\Order;
 use Illuminate\Http\Request;
 
-class KeranjangController extends Controller
+class OrderController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $cart = Cart::where('status', 'active')
-            ->where('user_id', auth()->user()->id)
-            ->first();
-
-        $items = $cart->items()->where('status', 'active')->get();
-
-        return view('keranjang', [
-            'cart' => $cart,
-            'items' => $items
+        return view('admin.order', [
+            'order' => Order::all()
         ]);
-
-        // todo 
-        // sambungkan ke view lalu passing variable cart juga items
     }
 
     /**
@@ -47,7 +36,7 @@ class KeranjangController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Order $order)
     {
         //
     }
@@ -55,7 +44,7 @@ class KeranjangController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Order $order)
     {
         //
     }
@@ -63,7 +52,7 @@ class KeranjangController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Order $order)
     {
         //
     }
@@ -71,10 +60,8 @@ class KeranjangController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Order $order)
     {
-        $item = CartItem::find($id);
-
-        $item->delete();
+        //
     }
 }

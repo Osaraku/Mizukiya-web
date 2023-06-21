@@ -7,6 +7,8 @@ use App\Http\Controllers\KontakController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\StaffController;
+use App\Http\Controllers\KeranjangController;
+use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,9 +32,7 @@ Route::resource('/reservasi', ReservasiController::class);
 
 Route::resource('/kontak', KontakController::class);
 
-Route::get('/keranjang', function () {
-    return view('keranjang');
-});
+Route::resource('/keranjang', KeranjangController::class);
 
 Route::get('/promo', [PromoController::class, 'index']);
 
@@ -48,3 +48,4 @@ Route::resource('/admin/reservasi', ReservasiController::class);
 Route::resource('/admin/menu', MenuController::class);
 Route::resource('/admin/promo', PromoController::class);
 Route::resource('/admin/pesan', KontakController::class);
+Route::resource('/admin/order', OrderController::class);

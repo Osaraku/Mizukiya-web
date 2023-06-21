@@ -12,8 +12,13 @@ class CartItem extends Model
 
     protected $guarded = ['id'];
 
-    public function cart() : BelongsTo
+    public function cart(): BelongsTo
     {
         return $this->belongsTo(Cart::class);
+    }
+
+    public function menu(): BelongsTo
+    {
+        return $this->belongsTo(Menu::class);
     }
 }

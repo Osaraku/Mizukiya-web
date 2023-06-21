@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="/css/icomoon.css">
     <link rel="stylesheet" href="/css/style.css">
     @stack('css')
+    @livewireStyles
 </head>
 
 <body>
@@ -79,10 +80,8 @@
                             class="nav-link">Pesan</a>
                     </li>
                     @auth
-                        <li class="nav-item  @yield('keranjang') cart"><a href="{{ url('keranjang') }}" class="nav-link"><span
-                                    class="icon icon-shopping_cart"></span><span
-                                    class="bag d-flex justify-content-center align-items-center"><small>1</small></span>
-                                Keranjang</a></li>
+                        <li class="nav-item  @yield('admin-order')"><a href="{{ url('/admin/order') }}" class="nav-link">
+                                Pesanan</a></li>
                         <form action="/logout" method="POST">
                             @csrf
                             <button type="submit" class=" btn btn-primary mt-2">Logout</button>
