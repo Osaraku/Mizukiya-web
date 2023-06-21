@@ -16,6 +16,7 @@ return new class extends Migration {
             $table->string('deskripsi');
             $table->date('awal_promo');
             $table->date('akhir_promo');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

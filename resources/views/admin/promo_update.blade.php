@@ -1,5 +1,5 @@
 @extends('layouts.base-admin')
-@section('admin-menu', 'active')
+@section('admin-promo', 'active')
 
 {{-- ini buat tambahan css kalau misal ada css khusus untuk 1 halaman aja gk mau berpengaruh ke halaman lain --}}
 @push('css')
@@ -27,42 +27,38 @@
 
     <section class="ftco-section">
         <div class="container">
-            <form action="/admin/menu" method="POST" enctype="multipart/form-data">
+            <form action="/admin/promo/{{ $promo->id }}" method="POST" enctype="multipart/form-data">
+                @method('put')
                 @csrf
                 <div class="form-group">
-                    <label for="nama"><b>Nama</b></label>
-                    <input type="text" name="nama" id="nama" class="form-control" placeholder="Nama Menu"
-                        required>
+                    <label for="judul"><b>Judul</b></label>
+                    <input type="text" name="judul" id="judul" class="form-control" placeholder="Judul Promo"
+                        value="{{ $promo->judul }}" required>
                 </div>
                 <div class="form-group">
                     <label for="deskripsi"><b>Deskripsi</b></label>
-                    <input type="text" name="deskripsi" id="deskripsi" class="form-control" placeholder="Deskripsi Menu"
-                        required>
+                    <input type="text" name="deskripsi" id="deskripsi" class="form-control" placeholder="Deskripsi Promo"
+                        value="{{ $promo->deskripsi }}" required>
                 </div>
                 <div class="form-group">
-                    <label for="id_kategori"><b>Kategori</b></label>
-                    <select name="id_kategori" id="id_kategori" class="form-control">
-                        <div class="select-wrap">
-                            <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                            @foreach ($categories as $category)
-                                <option value="{{ $category->id }}">{{ $category->nama_kategori }}</option>
-                            @endforeach
-                        </div>
-                    </select>
+                    <label for="awal_promo"><b>Awal Promo</b></label>
+                    <input type="date" name="awal_promo" id="awal_promo" class="form-control"
+                        value="{{ $promo->awal_promo }}" required>
                 </div>
                 <div class="form-group">
-                    <label for="harga"><b>Harga</b></label>
-                    <input type="number" name="harga" id="harga" class="form-control" placeholder="Harga Menu"
-                        required>
+                    <label for="akhir_promo"><b>Akhir Promo</b></label>
+                    <input type="date" name="akhir_promo" id="akhir_promo" class="form-control"
+                        value="{{ $promo->akhir_promo }}" required>
                 </div>
                 <div class="form-group mb-3">
-                    <label for="image"><b>Foto Menu</b></label>
-                    <img class="img-preview img-fluid mb-3 col-sm-3 d-block">
+                    <label for="image"><b>Foto Promo</b></label>
+                    <input type="hidden" name="oldImage" value="{{ $promo->image }}">
+                    <img src="{{ asset('storage/' . $promo->image) }}" class="img-preview img-fluid mb-3 col-sm-3 d-block">
                     <input class="form-control" type="file" name="image" id="image" accept="image/*"
                         onchange="previewImage()">
                 </div>
                 <div class="form-group">
-                    <input type="submit" value="Tambah Menu" class="btn btn-primary py-3 px-5 mt-3">
+                    <input type="submit" value="Update Promo" class="btn btn-primary py-3 px-5 mt-3">
                 </div>
             </form>
         </div>

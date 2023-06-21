@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Menu;
-use App\Models\Kategori;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class MenuController extends Controller
 {
@@ -46,9 +46,12 @@ class MenuController extends Controller
                 'nama' => 'required|max:50',
                 'deskripsi' => 'required|max:100',
                 'id_kategori' => 'required',
-                'harga' => 'required'
+                'harga' => 'required',
+                'image' => 'image'
             ]
         );
+
+        $validatedData['image'] = $request->file('image')->store('menu-images');
 
         Menu::create($validatedData);
 
@@ -84,9 +87,17 @@ class MenuController extends Controller
                 'nama' => 'required|max:50',
                 'deskripsi' => 'required|max:100',
                 'id_kategori' => 'required',
-                'harga' => 'required'
+                'harga' => 'required',
+                'image' => 'image'
             ]
         );
+
+        if ($request->file('image')) {
+            if ($request->oldImage) {
+                Storage::delete($request->oldImage);
+            }
+            $validatedData['image'] = $request->file('image')->store('menu-images');
+        }
 
         Menu::where('id', $menu->id)
             ->update($validatedData);
@@ -99,6 +110,9 @@ class MenuController extends Controller
      */
     public function destroy(Menu $menu)
     {
+        if ($menu->image) {
+            Storage::delete($menu->image);
+        }
         Menu::destroy($menu->id);
 
         return redirect("/admin/menu")->with('success', 'Menu berhasil dihapus');

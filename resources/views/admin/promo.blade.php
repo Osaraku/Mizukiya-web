@@ -1,5 +1,5 @@
-@extends('layouts.base')
-@section('promo', 'active')
+@extends('layouts.base-admin')
+@section('admin-promo', 'active')
 
 {{-- ini buat tambahan css kalau misal ada css khusus untuk 1 halaman aja gk mau berpengaruh ke halaman lain --}}
 @push('css')
@@ -10,7 +10,7 @@
 
 {{-- ini tempat isi kontennya --}}
 @section('content')
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_3.jpg');"
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('/images/bg_3.jpg');"
         data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
@@ -26,7 +26,15 @@
     </section>
 
     <section class="ftco-section bg-light">
+        <center>
+            <a href="/admin/promo/create" class="btn btn-success mb-5 ">+Tambah Promo</a>
+        </center>
         <div class="container">
+            @if (session()->has('success'))
+                <div class="alert alert-success" role="alert">
+                    {{ session('success') }}
+                </div>
+            @endif
             <div class="row">
                 @foreach ($promos as $promo)
                     <div class="col-md-4 ftco-animate">
@@ -44,6 +52,16 @@
                                 <p class="clearfix">
                                     {{ $promo['deskripsi'] }}
                                 </p>
+                                <center>
+                                    <a href="/admin/promo/{{ $promo->id }}/edit"
+                                        class="btn btn-warning mb-5 d-inline">Update</a>
+                                    <form action="/admin/promo/{{ $promo->id }}" method="post" class="d-inline ">
+                                        @method('delete')
+                                        @csrf
+                                        <button class="btn btn-danger" type="submit"
+                                            onclick="return confirm('Yakin hapus promo?') ">Delete</button>
+                                    </form>
+                                </center>
                             </div>
                         </div>
                     </div>

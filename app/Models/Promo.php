@@ -9,5 +9,5 @@ class Promo extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['judul', 'deskripsi', 'awal_promo', 'akhir_promo'];
+    protected $guarded = ['id'];
 }

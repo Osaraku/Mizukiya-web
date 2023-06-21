@@ -16,6 +16,7 @@ return new class extends Migration {
             $table->string('deskripsi');
             $table->foreignId('id_kategori');
             $table->integer('harga');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

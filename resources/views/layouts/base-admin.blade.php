@@ -75,8 +75,8 @@
                     <li class="nav-item @yield('admin-promo')"><a href="{{ url('/admin/promo') }}"
                             class="nav-link">Promo</a>
                     </li>
-                    <li class="nav-item @yield('admin-kontak')"><a href="{{ url('/admin/kontak') }}"
-                            class="nav-link">Kontak</a>
+                    <li class="nav-item @yield('admin-pesan')"><a href="{{ url('/admin/pesan') }}"
+                            class="nav-link">Pesan</a>
                     </li>
                     @auth
                         <li class="nav-item  @yield('keranjang') cart"><a href="{{ url('keranjang') }}" class="nav-link"><span

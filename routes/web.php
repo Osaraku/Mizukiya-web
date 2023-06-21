@@ -46,3 +46,5 @@ Route::post('/register', [RegisterController::class, 'store']);
 Route::resource('/admin/dashboard', StaffController::class);
 Route::resource('/admin/reservasi', ReservasiController::class);
 Route::resource('/admin/menu', MenuController::class);
+Route::resource('/admin/promo', PromoController::class);
+Route::resource('/admin/pesan', KontakController::class);

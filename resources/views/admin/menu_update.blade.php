@@ -27,7 +27,7 @@
 
     <section class="ftco-section">
         <div class="container">
-            <form action="/admin/menu/{{ $menu->id }}" method="POST">
+            <form action="/admin/menu/{{ $menu->id }}" method="POST" enctype="multipart/form-data">
                 @method('put')
                 @csrf
                 <div class="form-group">
@@ -60,6 +60,13 @@
                     <input type="number" name="harga" id="harga" class="form-control" placeholder="Harga Menu"
                         value="{{ $menu->harga }}" required>
                 </div>
+                <div class="form-group mb-3">
+                    <label for="image"><b>Foto Menu</b></label>
+                    <input type="hidden" name="oldImage" value="{{ $menu->image }}">
+                    <img src="{{ asset('storage/' . $menu->image) }}" class="img-preview img-fluid mb-3 col-sm-3 d-block">
+                    <input class="form-control" type="file" name="image" id="image" accept="image/*"
+                        onchange="previewImage()">
+                </div>
                 <div class="form-group">
                     <input type="submit" value="Edit Menu" class="btn btn-primary py-3 px-5">
                 </div>
@@ -70,5 +77,19 @@
 
 {{-- ini buat tambahan js kalau misal ada js khusus untuk 1 halaman aja gk mau berpengaruh ke halaman lain kaya ajax dll --}}
 @push('js')
-    <script></script>
+    <script>
+        function previewImage() {
+            const image = document.querySelector('#image')
+            const imgPreview = document.querySelector('.img-preview')
+
+            imgPreview.style.display - 'block';
+
+            const oFReader = new FileReader();
+            oFReader.readAsDataURL(image.files[0]);
+
+            oFReader.onload = function(oFREvent) {
+                imgPreview.src = oFREvent.target.result;
+            }
+        }
+    </script>
 @endpush
