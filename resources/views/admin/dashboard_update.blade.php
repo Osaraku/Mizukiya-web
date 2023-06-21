@@ -42,8 +42,10 @@
                             <div class="icon"><span class="ion-ios-arrow-down"></span></div>
                             @if ($staff->kelamin == 'Perempuan')
                                 <option value="Perempuan" selected>Perempuan</option>
-                            @else
                                 <option value="Laki-laki">Laki-laki</option>
+                            @else
+                                <option value="Laki-laki" selected>Laki-laki</option>
+                                <option value="Perempuan">Perempuan</option>
                             @endif
                         </div>
                     </select>
@@ -81,7 +83,7 @@
                         onchange="previewImage()">
                 </div>
                 <div class="form-group">
-                    <input type="submit" value="Tambah Staff" class="btn btn-primary py-3 px-5 mt-3">
+                    <input type="submit" value="Update Staff" class="btn btn-primary py-3 px-5 mt-3">
                 </div>
             </form>
         </div>
