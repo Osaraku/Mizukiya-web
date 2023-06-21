@@ -60,7 +60,7 @@
 
                     <div class="col-md-12 col-sm-12 text-center ftco-animate">
                         <span class="subheading">Mizukiya</span>
-                        <h1 class="mb-4">Nutritious &amp; Tasty</h1>
+                        <h1 class="mb-4">Bernutrisi &amp; Lezat</h1>
                     </div>
 
                 </div>
@@ -75,7 +75,7 @@
 
                     <div class="col-md-12 col-sm-12 text-center ftco-animate">
                         <span class="subheading">Mizukiya</span>
-                        <h1 class="mb-4">Delicious Specialties</h1>
+                        <h1 class="mb-4">Sesuai Selera Anda</h1>
                     </div>
 
                 </div>
@@ -145,13 +145,14 @@
                 </div>
                 <div class="col-md-5 wrap-about pt-5 pt-md-5 pb-md-3 ftco-animate">
                     <div class="heading-section mb-4 my-5 my-md-0">
-                        <span class="subheading">About</span>
+                        <span class="subheading">Profil</span>
                         <h2 class="mb-4">Mizukiya Restaurant</h2>
                     </div>
-                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <p>Sebuah Restoran Kecil dimulai dari kepulauan okinawa, Chef pertama kami yaitu Mizukiya Hitori adalah
+                        pelopor utama bagi masakan jepang dan sekarang menyebar ke seluruh dunia
+                    </p>
                     <pc class="time">
-                        <span>Mon - Fri <strong>8 AM - 11 PM</strong></span>
+                        <span>Senin - Jumat <strong>8 AM - 11 PM</strong></span>
                         <span><a href="#">+ 1-978-123-4567</a></span>
                         </p>
                 </div>
@@ -163,8 +164,8 @@
         <div class="container">
             <div class="row justify-content-center mb-5 pb-2">
                 <div class="col-md-12 text-center heading-section ftco-animate">
-                    <span class="subheading">Services</span>
-                    <h2 class="mb-4">Catering Services</h2>
+                    <span class="subheading">Layanan</span>
+                    <h2 class="mb-4">Pelayanan Catering</h2>
                 </div>
             </div>
             <div class="row">
@@ -174,9 +175,8 @@
                             <span class="flaticon-cake"></span>
                         </div>
                         <div class="media-body p-2 mt-3">
-                            <h3 class="heading">Birthday Party</h3>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
-                                unorthographic.</p>
+                            <h3 class="heading">Ulang Tahun</h3>
+                            <p>Restoran kami menyajikan paket katering bagi kamu yang sedang merayakan ulang tahun</p>
                         </div>
                     </div>
                 </div>
@@ -186,9 +186,8 @@
                             <span class="flaticon-meeting"></span>
                         </div>
                         <div class="media-body p-2 mt-3">
-                            <h3 class="heading">Business Meetings</h3>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
-                                unorthographic.</p>
+                            <h3 class="heading">Bisnis Meeting</h3>
+                            <p>Restoran kami menyajikan paket katering bagi kamu yang sedang melakukan bisnis meeting</p>
                         </div>
                     </div>
                 </div>
@@ -198,9 +197,8 @@
                             <span class="flaticon-tray"></span>
                         </div>
                         <div class="media-body p-2 mt-3">
-                            <h3 class="heading">Wedding Party</h3>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
-                                unorthographic.</p>
+                            <h3 class="heading">Pesta Pernikahan</h3>
+                            <p>Restoran Kami Menyajikan paket pernikahan spesial bagi kamu yang merayakan</p>
                         </div>
                     </div>
                 </div>
@@ -213,12 +211,12 @@
             <div class="row align-items-center">
                 <div class="col-md-6 pr-md-5">
                     <div class="heading-section text-md-right ftco-animate">
-                        <span class="subheading">Discover</span>
-                        <h2 class="mb-4">Our Menu</h2>
-                        <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
-                            Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the
-                            coast of the Semantics, a large language ocean.</p>
-                        <p><a href="#" class="btn btn-primary btn-outline-primary px-4 py-3">View Full Menu</a></p>
+                        <span class="subheading">Telusuri</span>
+                        <h2 class="mb-4">Menu Kami</h2>
+                        <p class="mb-4">Menu Kami memiliki tingkat kualitas yang tinggi dan tampilan yang menarik
+                            untuk dilihat dan kami selalu mengutamakan kepuasan pelanggan kami
+                        </p>
+                        <p><a href="#" class="btn btn-primary btn-outline-primary px-4 py-3">Lihat Semua Menu Disini</a></p>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -253,8 +251,8 @@
         <br><br>
         <div class="row justify-content-center mb-5">
             <div class="col-md-12 text-center heading-section ftco-animate">
-                <span class="subheading">Gallery</span>
-                <h2 class="mb-4">Check Our Gallery</h2>
+                <span class="subheading">Galeri</span>
+                <h2 class="mb-4">Cek Galeri Kami</h2>
             </div>
         </div>
         <div class="container-wrap">
@@ -301,8 +299,8 @@
             <br><br>
             <div class="row justify-content-center mb-5">
                 <div class="col-md-12 text-center heading-section ftco-animate">
-                    <span class="subheading">Testimony</span>
-                    <h2 class="mb-4">Happy Customer</h2>
+                    <span class="subheading">Testimoni</span>
+                    <h2 class="mb-4">Kepuasan Pelanggan</h2>
                 </div>
             </div>
             <div class="row ftco-animate justify-content-center">
@@ -316,10 +314,11 @@
                                     </span>
                                 </div>
                                 <div class="text p-3">
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
+                                    <p class="mb-4">Hanya disini nuansa dari masakan jepang dapat terlihat seolah-olah
+                                        kita sedang berada di negeri bunga sakura.
+                                    </p>
                                     <p class="name">Jason McClean</p>
-                                    <span class="position">Customer</span>
+                                    <span class="position">Pelanggan</span>
                                 </div>
                             </div>
                         </div>
@@ -331,10 +330,11 @@
                                     </span>
                                 </div>
                                 <div class="text p-3">
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
+                                    <p class="mb-4">menu yang sangat beragam dengan rasa dan tampilan yang unik
+                                        dijamin tidak akan membuat kecewa setiap pelangganya.
+                                    </p>
                                     <p class="name">Mark Stevenson</p>
-                                    <span class="position">Customer</span>
+                                    <span class="position">Pelanggan</span>
                                 </div>
                             </div>
                         </div>
@@ -346,10 +346,11 @@
                                     </span>
                                 </div>
                                 <div class="text p-3">
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
+                                    <p class="mb-4">Penyajian yang sangat memuaskan membuat saya ingin menghabiskan
+                                        setiap waktu saya di restoran ini.
+                                    </p>
                                     <p class="name">Art Leonard</p>
-                                    <span class="position">Customer</span>
+                                    <span class="position">Pelanggan</span>
                                 </div>
                             </div>
                         </div>
@@ -361,10 +362,9 @@
                                     </span>
                                 </div>
                                 <div class="text p-3">
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
+                                    <p class="mb-4">Fasilitas bintang 5, pelayanan yang elegan, dan makanan yang mewah.</p>
                                     <p class="name">Rose Henderson</p>
-                                    <span class="position">Customer</span>
+                                    <span class="position">Pelanggan</span>
                                 </div>
                             </div>
                         </div>
@@ -376,10 +376,11 @@
                                     </span>
                                 </div>
                                 <div class="text p-3">
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
+                                    <p class="mb-4">saya sangat menyukai restoran ini sampai saya 
+                                        hanya ingin menghabiskan waktu saya disini.
+                                    </p>
                                     <p class="name">Ian Boner</p>
-                                    <span class="position">Customer</span>
+                                    <span class="position">Pelanggan</span>
                                 </div>
                             </div>
                         </div>

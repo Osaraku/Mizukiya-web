@@ -36,9 +36,9 @@
                                 <tr class="text-center">
                                     <th>&nbsp;</th>
                                     <th>&nbsp;</th>
-                                    <th>Product</th>
-                                    <th>Price</th>
-                                    <th>Quantity</th>
+                                    <th>Produk</th>
+                                    <th>Harga</th>
+                                    <th>Jumlah Barang</th>
                                     <th>Total</th>
                                 </tr>
                             </thead>
