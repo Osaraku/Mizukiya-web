@@ -29,13 +29,16 @@
     <section class="ftco-section">
         <div class="container">
             <table class="table table-striped bg-light">
-                <thead class="thead-light">
+                <thead class="thead-primary">
                     <tr>
                         <th scope="col">Waktu</th>
                         <th scope="col">Nama</th>
                         <th scope="col">Email</th>
-                        {{-- <th scope="col">Subjek</th> --}}
-                        <th scope="col">Pesan</th>
+                        <th scope="col">No. Telp</th>
+                        <th scope="col">Alamat</th>
+                        <th scope="col">Menu</th>
+                        <th scope="col">Harga Total</th>
+                        <th scope="col">Pembayaran</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -44,8 +47,15 @@
                             <td>{{ $order['created_at'] }}</td>
                             <td>{{ $order['nama'] }}</td>
                             <td>{{ $order['email'] }}</td>
-                            {{-- <td>{{ $order['subjek'] }}</td> --}}
-                            <td>{{ $order['pesan'] }}</td>
+                            <td>{{ $order['phone'] }}</td>
+                            <td>{{ $order['alamat'] }}</td>
+                            <td>
+                                @foreach ($order['menu'] as $list)
+                                    {{ $list }},
+                                @endforeach
+                            </td>
+                            <td>{{ $order['total'] }}</td>
+                            <td>{{ $order['pembayaran'] }}</td>
                         </tr>
                     @endforeach
                 </tbody>

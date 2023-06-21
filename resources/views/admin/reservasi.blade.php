@@ -29,7 +29,7 @@
     <section class="ftco-section">
         <div class="container">
             <table class="table table-striped bg-light">
-                <thead class="thead-light">
+                <thead class="thead-primary">
                     <tr>
                         <th scope="col">No</th>
                         <th scope="col">Nama</th>

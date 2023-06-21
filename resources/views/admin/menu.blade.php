@@ -57,7 +57,7 @@
                                 role="tab" aria-controls="v-pills-5" aria-selected="false">Donburi</a>
 
                             <a class="nav-link ftco-animate" id="v-pills-6-tab" data-toggle="pill" href="#v-pills-6"
-                                role="tab" aria-controls="v-pills-6" aria-selected="false">Drinks</a>
+                                role="tab" aria-controls="v-pills-6" aria-selected="false">Minuman</a>
 
                         </div>
                     </div>

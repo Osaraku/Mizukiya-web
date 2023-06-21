@@ -28,25 +28,28 @@
 
     <section class="ftco-section ftco-cart">
         <div class="container">
+            @if (session()->has('success'))
+                <div class="alert alert-success" role="alert">
+                    {{ session('success') }}
+                </div>
+            @endif
             <div class="row">
                 <div class="col-md-12 ftco-animate">
-                    <div class="cart-list ftco-bg-light">
-                        <table class="table">
+                    <div class="cart-list bg-light">
+                        <table class="table table-striped">
                             <thead class="thead-primary">
                                 <tr class="text-center">
-                                    <th>&nbsp;</th>
-                                    <th>&nbsp;</th>
+                                    <th>Gambar</th>
                                     <th>Produk</th>
                                     <th>Harga</th>
                                     <th>Jumlah Barang</th>
                                     <th>Total</th>
+                                    <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach ($items as $item)
                                     <tr class="text-center">
-                                        <td class="product-remove"><a href="#"><span class="icon-close"></span></a>
-                                        </td>
 
                                         <td class="image-prod">
                                             <div class="img"
@@ -66,6 +69,15 @@
                                         </td>
 
                                         <td class="">Rp. {{ $item->total }}</td>
+
+                                        <td class="product-remove">
+                                            <form action="/keranjang/{{ $item->id }}" method="post" class="d-inline">
+                                                @method('delete')
+                                                @csrf
+                                                <button class="btn btn-danger" type="submit"
+                                                    onclick="return confirm('Yakin hapus menu?') ">Delete</button>
+                                            </form>
+                                        </td>
                                     </tr><!-- END TR-->
                                 @endforeach
                             </tbody>
@@ -78,7 +90,7 @@
 
     <section class="ftco-section">
         <div class="container">
-                <form action="/keranjang" method="POST">
+            <form action="/keranjang" method="POST">
                 @csrf
                 <div class="billing-form ftco-bg-dark p-3 p-md-5">
                     <div class="row">
@@ -88,7 +100,7 @@
                                 <div class="w-100"></div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="nama">Nama</label>
+                                        <label for="nama">Nama Anda</label>
                                         <input type="text" id="nama" name="nama" class="form-control"
                                             placeholder="Nama">
                                     </div>
@@ -96,23 +108,30 @@
                                 <div class="w-100"></div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="email">Email</label>
+                                        <label for="email">Email Anda</label>
                                         <input type="email" id="email" name="email" class="form-control"
                                             placeholder="Email">
                                     </div>
                                 </div>
-    
                                 <div class="w-100"></div>
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="phone">Phone</label>
                                         <input type="number" id="phone" name="phone" class="form-control"
-                                            placeholder="Nomor Telp">
+                                            placeholder="Nomor Telepon">
+                                    </div>
+                                </div>
+                                <div class="w-100"></div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="alamat">Alamat</label>
+                                        <input type="text" id="alamat" name="alamat" class="form-control"
+                                            placeholder="Alamat Pengiriman">
                                     </div>
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="col-xl-4 sidebar ftco-animate">
                             <div class="sidebar-box ftco-animate">
                                 <div class="cart-detail cart-total ftco-bg-dark p-3 p-md-4">
@@ -136,7 +155,7 @@
                                     </p>
                                 </div>
                             </div>
-    
+
                             <div class="sidebar-box ftco-animate">
                                 <div class="cart-detail ftco-bg-dark p-3 p-md-4">
                                     <h3 class="billing-heading mb-4">Payment Method</h3>
@@ -158,16 +177,18 @@
                                     <div class="form-group">
                                         <div class="col-md-12">
                                             <div class="radio">
-                                                <label><input type="radio" name="retail" class="mr-2"> Retail</label>
+                                                <label><input type="radio" name="retail" class="mr-2">
+                                                    Retail</label>
                                             </div>
                                         </div>
                                     </div>
                                     <p>
-                                    <input type="submit" value="Place an order" class="btn btn-primary py-3 px-4"> </p>
+                                        <input type="submit" value="Place an order" class="btn btn-primary py-3 px-4">
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </form>
         </div>
     </section> <!-- .section -->

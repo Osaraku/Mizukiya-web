@@ -15,6 +15,7 @@ return new class extends Migration {
             $table->string('nama');
             $table->string('email');
             $table->string('phone');
+            $table->string('alamat');
             $table->longText('menu');
             $table->integer('total');
             $table->string('pembayaran');

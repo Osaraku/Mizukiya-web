@@ -29,18 +29,17 @@
     <section class="ftco-section">
         <div class="container">
             <table class="table table-striped bg-light">
-                <thead class="thead-light">
+                <thead class="thead-primary">
                     <tr>
+                        <th scope="col">Waktu</th>
                         <th scope="col">Nama</th>
                         <th scope="col">Email</th>
-                        <th scope="col">No. Telp</th>
-                        <th scope="col">Menu</th>
-                        <th scope="col">Total</th>
-                        <th scope="col">Pembayaran</th>
+                        <th scope="col">Subjek</th>
+                        <th scope="col">Pesan</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($orders as $order)
+                    @foreach ($kontaks as $pesan)
                         <tr>
                             <td>{{ $pesan['created_at'] }}</td>
                             <td>{{ $pesan['name'] }}</td>
