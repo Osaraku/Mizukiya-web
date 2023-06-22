@@ -15,7 +15,7 @@ class ReservasiController extends Controller
     {
         if (auth()->check() && Auth::user()->is_admin == 1) {
             return view('admin.reservasi', [
-                "reservasis" => Reservasi::oldest()->get()
+                "reservasis" => Reservasi::orderBy('tanggal', 'ASC')->get()
             ]);
         } else {
             return view('reservasi');

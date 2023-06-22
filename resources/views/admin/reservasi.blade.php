@@ -31,7 +31,6 @@
             <table class="table table-striped bg-light">
                 <thead class="thead-primary">
                     <tr>
-                        <th scope="col">No</th>
                         <th scope="col">Nama</th>
                         <th scope="col">Email</th>
                         <th scope="col">No. Telp</th>
@@ -43,7 +42,6 @@
                 <tbody>
                     @foreach ($reservasis as $reservasi)
                         <tr>
-                            <td>1</td>
                             <td>{{ $reservasi['name'] }}</td>
                             <td>{{ $reservasi['email'] }}</td>
                             <td>{{ $reservasi['phone'] }}</td>
